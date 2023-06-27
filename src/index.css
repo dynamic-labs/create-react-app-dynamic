@@ -1,13 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.dynamic-shadow-dom {
+  --dynamic-hover: linear-gradient(136deg, #346bff 0%, #59f 100%);
+  --dynamic-connect-button-shadow: 0px 4px 4px -4px rgba(24, 39, 75, 0.32);
+  --dynamic-connect-button-background: radial-gradient(
+      139.35% 139.35% at 0% 100%,
+      rgba(160, 126, 255, 0.4) 0%,
+      rgba(160, 126, 255, 0) 100%
+    ),
+    linear-gradient(136deg, #346bff 0%, #59f 100%);
+  /* --dynamic-connect-button-color-hover: #0000;
+	--dynamic-connect-button-background-hover: #0000; */
 }
